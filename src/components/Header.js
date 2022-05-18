@@ -23,7 +23,10 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav.Item>
-            <Nav.Link href="/activity" className="shadow-none">
+            <Nav.Link
+              onClick={() => navigate("/activity")}
+              className="shadow-none"
+            >
               Activity
             </Nav.Link>
           </Nav.Item>
@@ -43,14 +46,20 @@ function Header() {
                 </>
               ) : (
                 <>
-                  <Nav.Link href="/login" className="mr-2 mt-2 shadow-none">
+                  <Nav.Link
+                    onClick={() => navigate("/login")}
+                    className="mr-2 mt-2 shadow-none"
+                  >
                     Login
                   </Nav.Link>
                 </>
               )}
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/signup" className="mr-4 mt-2 shadow-none">
+              <Nav.Link
+                onClick={() => navigate("/signup")}
+                className="mr-4 mt-2 shadow-none"
+              >
                 SignUp
               </Nav.Link>
             </Nav.Item>

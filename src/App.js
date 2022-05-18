@@ -47,7 +47,7 @@ function App() {
             <Route path="/addsalaries/:id" element={<AddSalaries />} />
             <Route path="/activity" element={<Activity />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/signUp" element={<SignUp />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
         </DesiHisab.Provider>
       </BrowserRouter>
