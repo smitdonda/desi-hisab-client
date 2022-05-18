@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav,Link } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import LogoutIcon from "@mui/icons-material/Logout";
@@ -23,9 +23,9 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav.Item>
-            <Nav.Link to="/activity" className="shadow-none">
+            <Link to="/activity" className="shadow-none">
               Activity
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav className="ml-auto">
             <Nav.Item>
