@@ -52,16 +52,14 @@ function Header() {
                   >
                     Login
                   </Nav.Link>
+                  <Nav.Link
+                    onClick={() => navigate("/signup")}
+                    className="mr-4 mt-2 shadow-none"
+                  >
+                    SignUp
+                  </Nav.Link>
                 </>
               )}
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                onClick={() => navigate("/signup")}
-                className="mr-4 mt-2 shadow-none"
-              >
-                SignUp
-              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
