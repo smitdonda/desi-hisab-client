@@ -12,14 +12,14 @@ function Activity() {
   // all activity
   let [alltransactions, setAllTransactions] = useState([]);
   const alltransactionsdata = [["Task", "All Activity"]];
-  const talltransactionsOptions = {
+  const alltransactionsOptions = {
     title: "All Activities",
   };
   let transactionsData = async () => {
     let transaction = await axios.get(
       "http://desi-hishab-server.herokuapp.com/users/all-activity-gettransection"
     );
-    setAllTransactions(transaction.data.user);
+    setAllTransactions(transaction?.data?.user);
   };
   if (currentRadioValue === "all") {
     if (alltransactions) {
@@ -170,7 +170,7 @@ function Activity() {
                 </div>
               }
               data={alltransactionsdata}
-              options={talltransactionsOptions}
+              options={alltransactionsOptions}
               width={"100%"}
               height={"400px"}
             />
