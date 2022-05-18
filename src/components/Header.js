@@ -23,7 +23,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav.Item>
-            <Nav.Link href="/activity" className="shadow-none">
+            <Nav.Link to="/activity" className="shadow-none">
               Activity
             </Nav.Link>
           </Nav.Item>
